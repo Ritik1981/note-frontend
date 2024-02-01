@@ -15,7 +15,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/users/login", {
+      .post("https://notes-node-sigma.vercel.app/users/login", {
         email,
         password,
       })
